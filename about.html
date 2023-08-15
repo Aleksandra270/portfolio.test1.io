@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yehorova Aleksandra portfolio site</title>
+    
+    <link href="css/about.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+  <img src="img/logo1.png" alt="Yehorova logo" class="logo">
+</a>
+<div class="dropdown">
+  <button class="dropbtn">Navigation</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="game.html">Game</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+     
+     <!-- About -->
+     <div class="content-md container">
+        <div class="row margin-b-20">
+          <div class="col-sm-6">
+            <h2>About</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column text-column">
+            <p>Hello. I am Oleksandra Yehorova. I'm from Ukraine. Beginner to full-stack development. I finished the course with the Codecademy, and at the moment, I am actively learning and developing in this area.</p>
+            <p>The development and construction of websites have always interested and captured me. It's a job that brings pleasure.</p>
+          </div>
+          <div class="column image-column">
+            <img class="img-responsive" src="img/01.jpg" alt="MY Office">
+          </div>
+        </div>
+    </div>
+            
+     <!-- end About -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="copyright">
+                    © 2023 Oleksandra Yehorova.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      const menuIcon = document.querySelector('.menu-icon');
+      const mobileLinks = document.querySelector('.mobile-links');
+  
+      menuIcon.addEventListener('click', () => {
+          mobileLinks.classList.toggle('show');
+      });
+  </script>
+    
+</body>
+</html>

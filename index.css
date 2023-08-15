@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+/* Define the styles for the navigation bar */
+nav {
+    background-color: #713580;
+  }
+  
+.dropbtn {
+    background-color: #713580;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: solid;
+    border-radius: 10px 100px / 120px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right; /* Align the dropdown to the right */
+    margin-right: 50px; /* Add some margin for spacing */
+    margin-top: 17px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #713580;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #713580;}
+  
+  .logo {
+    height: 60px;
+    margin: 10px 0;
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+  
+
+
+.promo-block {
+    background-image: url('img/03.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Adjust the height as needed */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    color: #fff;
+}
+
+.promo-content {
+    max-width: 600px;
+    padding: 40px;
+}
+
+.promo-content h1 {
+    font-size: 50px;
+    margin-top: 170px;
+}
+
+.promo-content p {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #713580;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    padding: 50px;
+    font-size: 15px;
+    
+}
+
+.row:after {
+    content: "";
+    display: inline;
+    clear: both;
+    
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #713580;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 4rem;
+}
+
+.footer-nav li:last-child {
+    margin-right: 0;
+}
+.footer-nav a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        position: static; /* Change this to "static" */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img.logo {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    nav .links {
+        margin: 20px 0;
+        display: flex; /* Add this line to display the links */
+        flex-direction: column; /* Change this to "column" */
+        align-items: center; /* Add this line to center align the links */
+    }
+
+    /* ... */
+}
+
+/* Update the mobile styles */
+@media (max-width: 768px) {
+    /* ... */
+
+    .promo-content h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .promo-content p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+
+/* Update the mobile styles */
+@media (max-width: 768px) {
+    /* ... */
+
+    .column {
+        width: 100%;
+        margin-bottom: 40px; /* Adjust spacing */
+        padding: 20px;
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .row {
+        display: block;
+    }
+}
+
+/* Update the mobile styles */
+@media (max-width: 768px) {
+    /* ... */
+
+    .footer-nav li {
+        margin-right: 1rem; /* Adjust spacing */
+    }
+}

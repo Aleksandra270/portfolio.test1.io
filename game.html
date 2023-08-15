@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yehorova Aleksandra portfolio site</title>
+    <link href="css/game.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">
+  <img src="img/logo1.png" alt="Yehorova logo" class="logo">
+</a>
+<div class="dropdown">
+  <button class="dropbtn">Navigation</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="game.html">Game</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+     
+     <!-- Game  -->
+
+     <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('fighting')"> Fighting</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('build')"> Build</button>
+        <button class="btn" onclick="filterSelection('puzzles')"> Puzzles</button>
+      </div> 
+
+      <!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column fighting">
+      <div class="content">
+        <a href="gameing/game1/index.html">
+        <img src="img/game img/01.png" alt="Shooter" style="width:70%"></a>
+        <h4>Shooter</h4>
+        <p>You can walk and shoot enemies</p>
+      </div>
+    </div>
+    <div class="column puzzles">
+      <div class="content">
+        <a href="gameing/game2/index.html">
+        <img src="img/game img/02.png" alt="Snake" style="width:100%"></a>
+        <h4>Snake</h4>
+        <p>Crawl and collect</p>
+      </div>
+    </div>
+    <div class="column build">
+      <div class="content">
+        <a href="gameing/game3/index.html">
+        <img src="img/game img/03.png" alt="House" style="width:90%"></a>
+        <h4>Dream House</h4>
+        <p>Build your dream home</p>
+      </div>
+    </div>
+  
+    <div class="column cars">
+      <div class="content">
+        <a href="gameing/game4/index.html">
+        <img src="img/game img/04.png" alt="Car" style="width:100%"></a>
+        <h4>Small car</h4>
+        <p>Here you can drive car</p>
+      </div>
+    </div>
+    <div class="column puzzles">
+      <div class="content">
+        <a href="gameing/game5/index.html">
+        <img src="img/game img/05.png" alt="Tangram" style="width:70%"></a>
+        <h4>Tangram</h4>
+        <p>Memorize the cards</p>
+      </div>
+    </div>
+    <div class="column build">
+      <div class="content">
+        <a href="gameing/game9/index.html">
+        <img src="img/game img/09.png" alt="Tetris" style="width:90%"></a>
+        <h4>Tetris</h4>
+        <p>Just tetris</p>
+      </div>
+    </div>
+  
+    <div class="column puzzles">
+      <div class="content">
+        <a href="gameing/game7/index.html">
+        <img src="img/game img/07.png" alt="2048" style="width:100%"></a>
+        <h4>2048</h4>
+        <p>Dial 2048</p>
+      </div>
+    </div>
+    <div class="column puzzles">
+      <div class="content">
+        <a href="gameing/game8/index.html">
+        <img src="img/game img/08.png" alt="Sudoku" style="width:100%"></a>
+        <h4>Sudoku</h4>
+        <p>This is a typical sudoku</p>
+      </div>
+    </div>
+    <div class="column fighting">
+      <div class="content">
+        <a href="gameing/game6/index.html">
+        <img src="img/game img/06.png" alt="Spaceship" style="width: 77%"></a>
+        <h4>Spaceship</h4>
+        <p>Spaceship battle</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+
+     <!-- End Game -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="copyright">
+                    © 2023 Oleksandra Yehorova.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+</body>
+</html>
+
