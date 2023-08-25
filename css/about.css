@@ -146,7 +146,7 @@ body {
   /* ... */
 
   .dropdown {
-      float: none;
+
       margin-right: 0;
       text-align: right; /* Align the dropdown content to the right on small screens */
       margin-right: 50px; /* Add some margin for spacing */
