@@ -196,19 +196,22 @@ nav {
     }
 }
 
-/* Update the mobile styles */
 @media (max-width: 768px) {
-    /* ... */
-
     .column {
-        width: 100%;
-        margin-bottom: 40px; /* Adjust spacing */
+        width: auto; /* Make columns take full width on small screens */
+        margin-bottom: 40px; /* Adjust margin for spacing */
         padding: 20px;
-        font-size: 14px; /* Adjust font size */
+        font-size: 14px;
     }
+}
 
-    .row {
-        display: block;
+/* Media query for screens up to 480px (typical mobile devices) */
+@media (max-width: 480px) {
+    .column {
+        margin-top: 40px; /* Adjust top margin for spacing */
+        margin-bottom: 20px; /* Further reduce bottom margin */
+        padding: 15px;
+        font-size: 12px; /* Adjust font size for smaller screens */
     }
 }
 
