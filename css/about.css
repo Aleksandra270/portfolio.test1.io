@@ -186,6 +186,6 @@ body {
   /* ... */
 
   .footer-nav li {
-      margin-right: 2rem; /* Adjust spacing */
+      margin-right: 10px; /* Adjust spacing */
   }
 }
