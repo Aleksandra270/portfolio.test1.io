@@ -1,4 +1,4 @@
-body {
+mbody {
     background: #f3cdfa;
 	color: #713580;
 	font-weight: normal;
@@ -66,7 +66,7 @@ nav {
 .footer {
     background-color: #713580;
     color: #fff;
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
     font-size: 18px;
     
@@ -154,6 +154,6 @@ body {
   /* ... */
 
   .footer-nav li {
-      margin-right: 2rem; /* Adjust spacing */
+      margin-right: 10px; /* Adjust spacing */
   }
 }
