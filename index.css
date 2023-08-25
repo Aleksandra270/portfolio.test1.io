@@ -103,6 +103,7 @@ nav {
     margin-top: 80px;
     padding: 50px;
     font-size: 15px;
+    word-wrap: break-word;
     
 }
 
