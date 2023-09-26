@@ -5,7 +5,12 @@ body {
 	font-size: 1em;
 	font-family: 'Roboto', Arial, sans-serif;
   }
-  
+
+  * {
+    font-family: 'Chakra Petch', sans-serif;
+font-family: 'Merriweather', serif;
+}
+
  /* Define the styles for the navigation bar */
  nav {
   background-color: #713580;
