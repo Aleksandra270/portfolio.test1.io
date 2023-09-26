@@ -18,6 +18,11 @@ body {
 	
 }
 
+  * {
+    font-family: 'Chakra Petch', sans-serif;
+font-family: 'Merriweather', serif;
+}
+
 
 
 input:focus, textarea:focus, keygen:focus, select:focus {
