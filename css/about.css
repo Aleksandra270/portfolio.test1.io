@@ -159,7 +159,7 @@ font-family: 'Merriweather', serif;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   /* ... */
   
   h2 {
@@ -191,5 +191,12 @@ font-family: 'Merriweather', serif;
 
   .footer-nav li {
       margin-right: 10px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-nav li {
+      margin-right: auto;
+      padding: 3px;
   }
 }
