@@ -227,3 +227,10 @@ input:focus, textarea:focus, keygen:focus, select:focus {
         margin-right: 1rem; /* Adjust spacing */
     }
 }
+
+@media (max-width: 480px) {
+    .footer-nav li {
+        margin-right: auto;
+        padding: 3px;
+    }
+}
