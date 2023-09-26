@@ -198,6 +198,13 @@ h1 {
   }
 }
 
+@media (max-width: 480px) {
+  .footer-nav li {
+      margin-right: auto;
+
+  }
+}
+
 @media (max-width: 768px) {
   /* ... */
 
